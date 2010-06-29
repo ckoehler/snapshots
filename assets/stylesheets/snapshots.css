@@ -1,0 +1,16 @@
+/* Snapshots plugin stylesheet */
+.snapshots-table th {
+	text-align: left;
+}
+
+.snapshots-name {
+	width: 450px;
+}
+
+.snapshots-date {
+	width: 150px;
+}
+
+.snapshots-size {
+	width:100px;
+}

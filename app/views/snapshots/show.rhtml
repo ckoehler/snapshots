@@ -1,0 +1,12 @@
+<h2>Development Snapshots</h2>
+<table class="snapshots-table">
+<th>Filename</th>
+<th>Size</th>
+<th>Date</th>
+<% for @file in @files %>
+    <%= render :partial => 'file' %>
+<% end %>
+</table>
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag '/plugin_assets/snapshots/stylesheets/snapshots' %>
+<% end %>

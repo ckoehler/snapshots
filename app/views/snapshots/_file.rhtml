@@ -1,0 +1,6 @@
+<tr>
+  <td class="snapshots-name"><%= link_to @file.match("[^/]+$"), @file.sub("public", "") %></td>
+  <td class="snapshots-size"><%= number_to_human_size(File.stat(@file).size) %></td>
+  <td class="snapshots-date"><%= File.stat(@file).mtime.strftime("%m/%d/%y %H:%M:%S") %></td>
+</tr>
+
